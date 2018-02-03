@@ -1,4 +1,4 @@
-# PaiCV
+# PaiResume
 My favourite resume format written in LaTeX.
 
 # Instructions:
