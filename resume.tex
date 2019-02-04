@@ -1,146 +1,92 @@
-\documentclass[a4paper]{article}
-    \usepackage{fullpage}
-    \usepackage{amsmath}
-    \usepackage{amssymb}
-    \usepackage{textcomp}
-    \usepackage[utf8]{inputenc}
-    \usepackage[T1]{fontenc}
-    \usepackage{times}
-    \textheight=10in
-    \pagestyle{empty}
-    \raggedright
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
 
-    %\renewcommand{\encodingdefault}{cg}
-%\renewcommand{\rmdefault}{lgrcmr}
+\documentclass[margin]{res} 
+% the margin option causes section titles to appear to the left of body text 
+\textwidth=5.2in % increase textwidth to get smaller right margin
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
 
-\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+\begin{document} 
+ 
+\name{Adarsh Yogesh Pai\\[12pt]} % the \\[12pt] adds a blank line after name
+ 
+\address{{\bf Present Address} \\ 402 Kerby Street \\ Arlington, TX 76013  \\
+        (682) 551-2698 }
+\address{{\bf Email} \\ adarsh9pai@gmail.com\\{\bf GitHub} github.com/adarsh9pai \\
+        {Website} www.adarshpai.com }
 
+ 
+\begin{resume} 
 
+\section{Education} 
+{\bf B.S.} in {\bf Computer Science}, University of Texas at Arlington\\
+{\bf Graduation} December 2020/Spring 2021\\
+{\bf GPA} 4.0 in major, 3.625 overall\\
+{\bf Academic Honors} Honors College, Maverick Academic Scholarship Recipient, Honor Roll\\
+{\bf Peer Academic Leader} I was an instructor for a college introduction course for incoming Computer Science and Music freshmen. Fall 2018.
+ 
 
-\newcommand{\area} [2] {
-    \vspace*{-9pt}
-    \begin{verse}
-        \textbf{#1}   #2
-    \end{verse}
-}
+\section{Experience}
+ {\bf Undergraduate Research Assistant,} Heracleia Lab\hfill Summer 18 - Present
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Improved Tensorflow based hand detector to streamline building datasets using OpenCV.
+ \item Primarily worked with Python, OpenCV and C\#.
+ \end{itemize}
 
-\newcommand{\lineunder} {
-    \vspace*{-8pt} \\
-    \hspace*{-18pt} \hrulefill \\
-}
-
-\newcommand{\header} [1] {
-    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
-    \vspace*{-6pt} \lineunder
-}
-
-\newcommand{\employer} [3] {
-    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
-}
-
-\newcommand{\contact} [3] {
-    \vspace*{-10pt}
-    \begin{center}
-        {\Huge \scshape {#1}}\\
-        #2 \\ #3
-    \end{center}
-    \vspace*{-8pt}
-}
-
-\newenvironment{achievements}{
-    \begin{list}
-        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
-    \end{list}
-}
-
-\newcommand{\schoolwithcourses} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-    \vspace*{5pt}
-}
-
-\newcommand{\school} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-}
-% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{document}
-\vspace*{-40pt}
-
-    
-
-
-\vspace*{-10pt}
-\begin{center}
-	{\Huge{Adarsh Yogesh Pai}}\\
-	Arlington, Texas $\cdot$ adarsh9pai@gmail.com $\cdot$ 682.551.2698 $\cdot$ www.adarshpai.com\\
-\end{center}
-
-%==== Experience ====%
-\header{Education}
-\textbf{University of Texas at Arlington}\hfill Arlington, Texas\\
-B.S. Computer Science \textit{GPA: 3.63} \hfill Fall 2017 - Spring 2021\\
-
-\begin{itemize} \itemsep 1pt
-	\item CSE GPA: 4.0
-	\item Relevant Coursework: Fundamentals of Software Engineering, Algorithms and Data Structures, Object Oriented Programming, Discrete Structures, Computer Organization and Assembly, Linear Algebra.
-	\item Member of the Honors College.
-	\item Maverick Academic Scholarship(\$5000 per annum) and Out of State tuition waiver
-         \item Peer Academic Leader (August 2018 - Dec 2018): Instructor for UNIV-EN 1131(Computer Science) and UNIV-LA 1000(Music).
-\end{itemize}
-\vspace{2mm}
-\header{Experience}
-\vspace{1mm}
-
-\textbf{Heracleia Human-Centered Computing Lab} \hfill Arlington, Texas\\
-\textit{Undergraduate Research Assistant} \hfill May 2018 | Present\\
-\vspace{-1mm}
-\begin{itemize} \itemsep 1pt
-	\item Improved Tensorflow based hand detector to streamline building datasets using OpenCV.
-	\item Currently working on developing VR simulations for immersive storytelling.
-	\item Primarily work with Python, OpenCV and C\#.
-\end{itemize}
-
-\textbf{Emerson Electric} \hfill Mumbai, India\\
-\textit{Summer Intern, Information Technology} \hfill June 2017 | July 2017\\
-\vspace{-1mm}
-\begin{itemize} \itemsep 1pt
-	\item Developed an internal web-based application to optimize scheduling and improve operational effectiveness.
-	\item Primarily worked with PHP and Postgres.
+ 
+ 
+{\bf Summer Intern, IT} Emerson, Mumbai, India \hfill  Summer 2017
+\begin{itemize} \itemsep -2pt %reduce space between items
+\item Developed an internal web-based application to optimize scheduling and improve operational effectiveness.
+\item Primarily used PHP and Postgres.
 \end{itemize}
 
 
-\vspace{2mm}
+\section{Prominent Projects} 
+		{\bf \underline{MemeRoyale}} Winner, {\bf 1st Prize and Best Mobile Project}, HackSMU 2019  \hfill
+                \begin{itemize} \itemsep -3pt
+                 \item  MemeRoyale is an iOS and Android app that helps you create and caption memes 
+                 while competing against others in a battle royale format for the top voted meme.
+                 \item The backend was written in NodeJs with the Express Framework and Socket.io and was hosted on Amazon Lightsail using nginx and PM2.
+                 \item The frontend was written in React Native and MongoDB was used as the database on mLab.
+                 \item Google OAuth was used for Authentication. 
+                 
+                
+		 \end{itemize}
 
-\header{Projects}
-{\textbf{Cibo}} October 2018 - December 2018 \hspace{1mm} Cibo is a food and event organization app powered by curated listings and crowd-sourced recommendations to help you find the perfect place to dine. 
-\begin{itemize}
-\item Led a team of five to develop an iOS and Android app with React Native and an API with NodeJS.
-\item 2nd Place - Best App, Fundamentals of Software Engineering
-\item \textit{Express, React Native, MongoDB, Heroku, ES6} 
-\end{itemize}
-\vspace*{2mm}
-{\textbf{Clime}} January 2018 \hspace{1mm} Get real-time weather updates, ATMs, Hospitals and Shelters near you at times of emergency.
-\begin{itemize}
-\item Developed Webhook for Facebook Messenger based chatbot. Used the OpenWeatherMap Weather API. Deployed Webhook to Heroku.
-\item \textit{Express, Heroku, Facebook Messenger}
-\end{itemize}
-\textbf{Minor Projects} Repositories for university coursework, public projects and experiments with APIs. 
-\begin{itemize}
-\item GitHub: https://www.github.com/adarsh9pai
-\end{itemize}
-\vspace{2mm}
+         {\bf \underline{Cibo}} \hfill
+         \begin{itemize} \itemsep -3pt
+          \item  Cibo is an iOS and Android restaurant reviewing app for dining options near college campuses and setting up public meet-up events.
+          \item The backend was written in NodeJs with the Express Framework and was hosted on Heroku.
+          \item The frontend was written in React Native and MongoDB was used as the database.
+          \item Facebook OAuth was used for Authentication. 
+          
+         
+          \end{itemize}
 
-\header{Languages and Frameworks}
-\begin{itemize}
-\item Skilled: Python, C, JavaScript(ES6), NodeJs
-\item Comfortable: C++, \LaTeX, Markdown
-\item Acquainted: Java, SQL, PHP
-\item Frameworks: NumPy, Pandas, Scikit-Learn, Express, Flask, React, Bulma
-\item Version Control: Git
-\end{itemize}
+          {\bf \underline{Komodo Platform}} Open Source Contributor
+         \begin{itemize} \itemsep -3pt
+          \item I will be working Dr.Sajib Datta this semester to write Smart Contracts for the Komodo Blockchain Platform primarily in C++.
+          
+         
+          \end{itemize}
+        
 
-\vspace{2mm}
 
-\end{document}
+ 
+
+% Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
+\section{Technical \\ Skills}
+   \begin{tabular}{l p{3in}}
+    \underline{{\bf Languages}:} & {\bf Proficient} JavaScript, C++, Python3\\
+                           &  {\bf Comfortable} Go, SQL, MongoDB, \LaTeX\\
+                           &  {\bf Acquainted} Java, Ruby, C\#, Swift\\ \\
+     \underline{{\bf Frameworks}:} &  Express, React, React Native, Socket.io,
+                                      Flask, Numpy, scikit-learn, Postgres\\ \\
+     \underline{{\bf Additional Tools}:} & Amazon Web Services(AWS), mLab, Git\\
+ \end{tabular}
+
+\end{resume} 
+\end{document} 
+
